@@ -10,7 +10,166 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LOG OUT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto col justify-content-md-end">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">ADD <span class="sr-only">(current)</span></a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ADD
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EMPLOYEES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AGENTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SUPPLIERS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MARKETERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MONITOR</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              TOOLS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">AGENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SEARCH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RATES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CREDIT</a>
+          </li>
+        </ul>
+
+        <form class="form-inline col justify-content-md-start">
+          <input class="form-control mr-sm-2" type="search" placeholder="New Agent" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ADD</button>
+        </form>
+      </nav>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Company</th>
+            <th scope="col">Country</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody class="table-striped">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">Employee</div>
+                <!-- <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"> -->
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">Comment</div>
+                <!-- <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
