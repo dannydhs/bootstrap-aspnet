@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Bootstrap - Asp.net</title>
+    <title>List - Bootstrap - Asp.net</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+      .btn-circle {
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -81,7 +86,15 @@
       </div>
     </nav>
     <div class="container">
-      
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-md-3" style="margin-bottom: 4px;">
+          <a href="#" class="btn btn-primary btn-circle" title="Files"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+          <a href="#" class="btn btn-primary btn-circle" title="Check"><i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+          <a href="#" class="btn btn-primary btn-circle" title="Payment"><i class="fa fa-usd" aria-hidden="true"></i></a>
+          <a href="#" class="btn btn-primary btn-circle" title="Book"><i class="fa fa-book" aria-hidden="true"></i></a>
+        </div>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -116,9 +129,9 @@
           </select>
         </div>
         <div class="col-md-4">
-          <button class="btn btn-info my-2 my-sm-0" type="submit">EDIT</button>
-          <button class="btn btn-info my-2 my-sm-0" type="submit">DELETE</button>
-          <button class="btn btn-info my-2 my-sm-0" type="submit">VIEW</button>
+          <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-pencil" aria-hidden="true"></i> EDIT</button>
+          <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</button>
+          <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-eye" aria-hidden="true"></i> VIEW</button>
           <button class="btn btn-info my-2 my-sm-0" type="submit">CP</button>
         </div>
         <div class="col-md-3">
@@ -160,7 +173,7 @@
 
     </div>
 
-    <table class="table table-bordered table-striped table-hover t-style-large">
+    <table class="table table-bordered table-striped table-hover table-responsive-sm t-style-large">
     <thead class="thead-dark">
       <tr>
         <th scope="col">ID</th>
