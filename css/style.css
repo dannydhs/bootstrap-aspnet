@@ -1,1 +1,21 @@
-nav{margin-bottom:2px}nav.cnt-options{margin-top:1em;margin-bottom:.7em}.cnt-options__select{width:4em}ul.pagination{margin-bottom:0}.t-style{text-align:center}
+nav {
+  margin-bottom: 2px; }
+
+nav.cnt-options {
+  margin-top: 1em;
+  margin-bottom: .7em; }
+
+.cnt-options__select {
+  width: 70px; }
+
+ul.pagination {
+  margin-bottom: 0; }
+
+.t-style {
+  text-align: center; }
+
+.add-office {
+  background-color: red; }
+
+.t-style-large th {
+  font-size: 11px; }
