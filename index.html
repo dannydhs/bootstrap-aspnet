@@ -8,9 +8,222 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LOG OUT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto col justify-content-md-end">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">ADD <span class="sr-only">(current)</span></a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ADD
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EMPLOYEES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AGENTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SUPPLIERS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MARKETERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">B2B</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MONITOR</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              TOOLS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">AGENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SEARCH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RATES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CREDIT</a>
+          </li>
+        </ul>
+
+        <form class="form-inline col justify-content-md-start">
+          <input class="form-control mr-sm-2" type="search" placeholder="New Agent" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ADD</button>
+        </form>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light cnt-options" style="background-color:#c6c9cec4">
+        <label for="">Count: 164</label>
+        <div class="col-md-1">
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+      </nav>
+
+      <nav aria-label="Table navigation">
+        <ul class="pagination pagination-sm">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <table class="table table-bordered table-striped table-hover t-style">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Company</th>
+            <th scope="col">Country</th>
+            <th scope="col">City</th>
+            <th scope="col">Market</th>
+            <th scope="col">Key Account</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">254</th>
+            <td>de</td>
+            <td>United States</td>
+            <td>none</td>
+            <td>none</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">253</th>
+            <td>s</td>
+            <td>France</td>
+            <td>none</td>
+            <td>none</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">252</th>
+            <td>a & m</td>
+            <td>Germany</td>
+            <td>none</td>
+            <td>none</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">251</th>
+            <!-- <td colspan="2">Larry the Bird</td> -->
+            <td>at & t</td>
+            <td>Great Britain</td>
+            <td>none</td>
+            <td>none</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">Employee</div>
+                <!-- <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"> -->
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label class="sr-only" for="inlineFormInputGroup">Username</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">Comment</div>
+                <!-- <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username"> -->
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
